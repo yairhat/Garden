@@ -283,6 +283,24 @@
     .mobile-menu .btn { margin-top: 20px; justify-content: center; }
 
     /* ═══════════════════════════════════════════════════════
+       ANIMACIONES
+    ═══════════════════════════════════════════════════════ */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in-up {
+      animation: fadeInUp 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+
+    /* ═══════════════════════════════════════════════════════
        HERO
     ═══════════════════════════════════════════════════════ */
     #inicio {
@@ -349,6 +367,8 @@
       color: var(--white);
       line-height: 1.08;
       margin-bottom: 12px;
+      opacity: 0; /* Comienza invisible */
+      animation: fadeInUp 1.2s cubic-bezier(0.22, 1, 0.36, 1) 0.3s forwards; /* Animación con pequeño retraso */
     }
     .hero-title .highlight {
       color: var(--gold);
