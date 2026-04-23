@@ -1,0 +1,2189 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ═══════════════════════════════════════════
+       SEO LOCAL — edita aquí los meta tags
+  ═══════════════════════════════════════════ -->
+  <title>Vivero Garden Center Marysia | Plantas y Árboles en Texcoco</title>
+  <meta name="description" content="Vivero en Texcoco, Estado de México. Plantas ornamentales, árboles frutales, macetas, tierra y sustratos. Carr al Molino de Flores 8, Xocotlan. Tel: 595 954 4223." />
+  <meta name="keywords" content="vivero Texcoco, plantas Texcoco, árboles frutales Estado de México, vivero Garden Center Marysia, jardinería Texcoco, macetas, tierra para plantas" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Vivero Garden Center Marysia — Texcoco" />
+  <meta property="og:description" content="Tu vivero de confianza en Texcoco. Plantas, árboles, macetas y asesoría personalizada." />
+  <meta property="og:locale" content="es_MX" />
+  <meta property="og:type" content="website" />
+
+  <!-- Fuentes Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ═══════════════════════════════════════════════════════
+       VARIABLES — Edita aquí los colores del sitio
+    ═══════════════════════════════════════════════════════ */
+    :root {
+      --bg:           #f5f2eb;   /* Crema cálido */
+      --fg:           #1a2e1a;   /* Verde muy oscuro */
+      --primary:      #2d5a27;   /* Verde bosque */
+      --primary-lt:   #3d7a35;   /* Verde medio */
+      --accent:       #4a8c40;   /* Verde vivo */
+      --earth:        #7a5230;   /* Marrón tierra */
+      --earth-lt:     #c4956a;   /* Tierra claro */
+      --gold:         #c8a84b;   /* Dorado natural */
+      --cream:        #faf7f0;   /* Blanco roto */
+      --card:         #ffffff;
+      --border:       #d4e0c8;
+      --muted:        #6b7c68;
+      --hero-bg:      #162112;   /* Verde muy oscuro hero */
+      --section-dark: #1e3a18;   /* Secciones oscuras */
+      --white:        #ffffff;
+      --radius:       14px;
+      --radius-sm:    8px;
+      --radius-xl:    24px;
+      --font-sans:    'Plus Jakarta Sans', sans-serif;
+      --font-serif:   'Playfair Display', serif;
+      --shadow-sm:    0 2px 12px rgba(29,58,24,0.08);
+      --shadow-md:    0 8px 32px rgba(29,58,24,0.14);
+      --shadow-lg:    0 20px 48px rgba(29,58,24,0.20);
+    }
+
+    /* ═══════════════════════════════════════════════════════
+       RESET & BASE
+    ═══════════════════════════════════════════════════════ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: var(--font-sans);
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a  { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+    button { cursor: pointer; font-family: inherit; border: none; background: none; }
+
+    /* ═══════════════════════════════════════════════════════
+       UTILIDADES
+    ═══════════════════════════════════════════════════════ */
+    .container { max-width: 1160px; margin: 0 auto; padding: 0 24px; }
+    .section-pad { padding: 96px 0; }
+    .section-pad-sm { padding: 72px 0; }
+    .text-center { text-align: center; }
+
+    .label {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+    .label::before { content: '— '; }
+    .label::after  { content: ' —'; }
+
+    h1,h2,h3 { font-family: var(--font-serif); line-height: 1.2; }
+    h2.section-title {
+      font-size: clamp(28px, 4vw, 42px);
+      color: var(--fg);
+      margin-bottom: 16px;
+    }
+    h2.section-title.light { color: var(--white); }
+    .section-desc {
+      font-size: 17px;
+      color: var(--muted);
+      max-width: 560px;
+      line-height: 1.7;
+    }
+    .section-desc.light { color: rgba(255,255,255,.7); }
+    .section-header { margin-bottom: 56px; }
+
+    /* Botones */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 28px;
+      border-radius: 50px;
+      font-size: 15px;
+      font-weight: 600;
+      transition: all .28s cubic-bezier(.4,0,.2,1);
+      white-space: nowrap;
+    }
+    .btn-primary {
+      background: var(--primary);
+      color: var(--white);
+      box-shadow: 0 4px 18px rgba(45,90,39,.35);
+    }
+    .btn-primary:hover {
+      background: var(--primary-lt);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(45,90,39,.45);
+    }
+    .btn-outline {
+      background: transparent;
+      color: var(--white);
+      border: 1.5px solid rgba(255,255,255,.5);
+    }
+    .btn-outline:hover {
+      background: rgba(255,255,255,.1);
+      border-color: rgba(255,255,255,.85);
+      transform: translateY(-2px);
+    }
+    .btn-gold {
+      background: var(--gold);
+      color: var(--hero-bg);
+      box-shadow: 0 4px 18px rgba(200,168,75,.4);
+    }
+    .btn-gold:hover {
+      background: #d4b45a;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(200,168,75,.5);
+    }
+    .btn-wa {
+      background: #25d366;
+      color: var(--white);
+      box-shadow: 0 4px 18px rgba(37,211,102,.4);
+    }
+    .btn-wa:hover {
+      background: #20c05a;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(37,211,102,.5);
+    }
+
+    /* Divider orgánico */
+    .wave-divider { line-height: 0; }
+    .wave-divider svg { display: block; width: 100%; }
+
+    /* ═══════════════════════════════════════════════════════
+       NAVBAR
+    ═══════════════════════════════════════════════════════ */
+    #navbar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      padding: 20px 0;
+      transition: all .4s ease;
+    }
+    #navbar.scrolled {
+      padding: 12px 0;
+      background: rgba(22,33,18,.45);
+      backdrop-filter: blur(20px) saturate(160%);
+      -webkit-backdrop-filter: blur(20px) saturate(160%);
+      border-bottom: 1px solid rgba(255,255,255,.08);
+      box-shadow: 0 8px 32px rgba(0,0,0,.18);
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    /* Logo */
+    .logo { display: flex; align-items: center; gap: 12px; }
+    .logo-icon { width: 42px; height: 42px; flex-shrink: 0; transition: transform .3s; }
+    .logo:hover .logo-icon { transform: scale(1.06); }
+    .logo-text-wrap { line-height: 1; }
+    .logo-main {
+      font-family: var(--font-serif);
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--white);
+      letter-spacing: -.01em;
+      display: block;
+    }
+    .logo-sub {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 3px;
+    }
+    .logo-sub-name {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+    .logo-dot { width: 3px; height: 3px; border-radius: 50%; background: rgba(200,168,75,.5); }
+    .logo-sub-tag { font-size: 9px; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.3); }
+
+    /* Nav links */
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .nav-links a {
+      font-size: 13.5px;
+      font-weight: 500;
+      color: rgba(255,255,255,.8);
+      padding: 7px 13px;
+      border-radius: 50px;
+      transition: all .22s;
+    }
+    .nav-links a:hover {
+      color: var(--white);
+      background: rgba(255,255,255,.1);
+    }
+
+    .nav-cta { display: flex; align-items: center; gap: 10px; }
+    .nav-cta .btn { padding: 10px 20px; font-size: 13.5px; }
+
+    /* Hamburger */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      padding: 6px;
+      border-radius: 8px;
+      transition: background .2s;
+    }
+    .hamburger:hover { background: rgba(255,255,255,.1); }
+    .hamburger span {
+      display: block;
+      width: 22px; height: 2px;
+      background: var(--white);
+      border-radius: 2px;
+      transition: all .3s;
+    }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    /* Mobile menu */
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      z-index: 999;
+      background: rgba(22,33,18,.97);
+      backdrop-filter: blur(16px);
+      padding: 100px 32px 40px;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a {
+      font-size: 20px;
+      font-weight: 600;
+      color: rgba(255,255,255,.85);
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+      transition: color .2s;
+    }
+    .mobile-menu a:hover { color: var(--gold); }
+    .mobile-menu .btn { margin-top: 20px; justify-content: center; }
+
+    /* ═══════════════════════════════════════════════════════
+       HERO
+    ═══════════════════════════════════════════════════════ */
+    #inicio {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background: var(--hero-bg);
+    }
+    .hero-bg img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      opacity: .38;
+    }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        160deg,
+        rgba(22,33,18,.6) 0%,
+        rgba(22,33,18,.78) 55%,
+        rgba(22,33,18,.92) 100%
+      );
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 140px 0 100px;
+      max-width: 720px;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(200,168,75,.15);
+      border: 1px solid rgba(200,168,75,.35);
+      padding: 6px 16px;
+      border-radius: 50px;
+      margin-bottom: 24px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--gold);
+      letter-spacing: .08em;
+    }
+    .hero-badge-dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--gold);
+      animation: blink 2s infinite;
+    }
+    @keyframes blink {
+      0%,100%{ opacity:1; }
+      50%{ opacity:.3; }
+    }
+    .hero-title {
+      font-family: var(--font-serif);
+      font-size: clamp(36px, 6vw, 70px);
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.08;
+      margin-bottom: 12px;
+    }
+    .hero-title .highlight {
+      color: var(--gold);
+      font-style: italic;
+    }
+    .hero-title .line2 {
+      color: rgba(255,255,255,.75);
+      font-size: .75em;
+      font-weight: 400;
+    }
+    .hero-desc {
+      font-size: 17px;
+      color: rgba(255,255,255,.72);
+      line-height: 1.7;
+      margin-bottom: 36px;
+      max-width: 540px;
+    }
+    .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 52px; }
+    .hero-stats {
+      display: flex;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+    .stat-item { text-align: left; }
+    .stat-num {
+      font-family: var(--font-serif);
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1;
+    }
+    .stat-num span { color: var(--gold); }
+    .stat-label { font-size: 12px; color: rgba(255,255,255,.5); margin-top: 3px; }
+    .hero-scroll {
+      position: absolute;
+      bottom: 32px; left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      font-size: 11px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.4);
+    }
+    .scroll-line {
+      width: 1px; height: 36px;
+      background: linear-gradient(to bottom, var(--gold), transparent);
+      animation: scrollline 1.8s ease-in-out infinite;
+    }
+    @keyframes scrollline {
+      0%{ transform: scaleY(0); transform-origin: top; }
+      50%{ transform: scaleY(1); transform-origin: top; }
+      51%{ transform: scaleY(1); transform-origin: bottom; }
+      100%{ transform: scaleY(0); transform-origin: bottom; }
+    }
+
+    /* ═══════════════════════════════════════════════════════
+       SOBRE NOSOTROS
+    ═══════════════════════════════════════════════════════ */
+    #nosotros { background: var(--cream); }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+    .about-img-wrap {
+      position: relative;
+    }
+    .about-img-main {
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+    }
+    .about-img-main img {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+      transition: transform .5s;
+    }
+    .about-img-main:hover img { transform: scale(1.04); }
+    .about-badge-float {
+      position: absolute;
+      bottom: -20px; right: -20px;
+      background: var(--primary);
+      color: var(--white);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      box-shadow: var(--shadow-md);
+      text-align: center;
+      min-width: 130px;
+    }
+    .about-badge-float .num {
+      font-family: var(--font-serif);
+      font-size: 34px;
+      font-weight: 700;
+      color: var(--gold);
+      line-height: 1;
+    }
+    .about-badge-float .txt { font-size: 12px; color: rgba(255,255,255,.75); margin-top: 4px; }
+    .about-text .label { display: block; }
+    .about-text h2 { margin-bottom: 16px; }
+    .about-text p { color: var(--muted); font-size: 16px; line-height: 1.75; margin-bottom: 16px; }
+    .trust-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-top: 28px;
+    }
+    .trust-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 14px 16px;
+      transition: all .25s;
+    }
+    .trust-item:hover {
+      border-color: var(--primary);
+      box-shadow: var(--shadow-sm);
+      transform: translateY(-2px);
+    }
+    .trust-icon {
+      width: 36px; height: 36px;
+      border-radius: 8px;
+      background: rgba(45,90,39,.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .trust-icon svg { width: 18px; height: 18px; color: var(--primary); }
+    .trust-info strong { display: block; font-size: 13px; font-weight: 700; color: var(--fg); }
+    .trust-info span { font-size: 12px; color: var(--muted); }
+
+    /* ═══════════════════════════════════════════════════════
+       PRODUCTOS
+    ═══════════════════════════════════════════════════════ */
+    #productos { background: var(--bg); }
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .product-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      transition: all .32s cubic-bezier(.4,0,.2,1);
+      box-shadow: var(--shadow-sm);
+    }
+    .product-card:hover {
+      transform: translateY(-8px);
+      border-color: rgba(45,90,39,.25);
+      box-shadow: 0 20px 48px rgba(29,58,24,.2);
+    }
+    .product-img {
+      height: 200px;
+      overflow: hidden;
+      position: relative;
+    }
+    .product-img img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      transition: transform .5s;
+    }
+    .product-card:hover .product-img img { transform: scale(1.08); }
+    .product-cat {
+      position: absolute;
+      top: 12px; left: 12px;
+      background: rgba(22,33,18,.7);
+      backdrop-filter: blur(8px);
+      color: var(--gold);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 50px;
+      border: 1px solid rgba(200,168,75,.3);
+    }
+    .product-body { padding: 22px 22px 20px; }
+    .product-body h3 {
+      font-family: var(--font-serif);
+      font-size: 19px;
+      font-weight: 700;
+      color: var(--fg);
+      margin-bottom: 8px;
+    }
+    .product-body p { font-size: 14px; color: var(--muted); line-height: 1.65; margin-bottom: 16px; }
+    .product-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--primary);
+      transition: gap .2s, color .2s;
+    }
+    .product-card:hover .product-link { gap: 10px; color: var(--primary-lt); }
+    .product-link svg { width: 14px; height: 14px; }
+
+    /* ═══════════════════════════════════════════════════════
+       CÓMO TRABAJAMOS
+    ═══════════════════════════════════════════════════════ */
+    #como-trabajamos { background: var(--cream); }
+    .how-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      position: relative;
+      margin-bottom: 48px;
+    }
+    .how-connector {
+      position: absolute;
+      top: 52px;
+      left: calc(16.67% + 32px);
+      right: calc(16.67% + 32px);
+      height: 2px;
+      background: repeating-linear-gradient(
+        90deg,
+        var(--gold) 0, var(--gold) 8px,
+        transparent 8px, transparent 18px
+      );
+      opacity: .45;
+    }
+    .how-step {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-xl);
+      padding: 36px 28px 30px;
+      text-align: center;
+      position: relative;
+      transition: all .3s;
+      box-shadow: var(--shadow-sm);
+    }
+    .how-step:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-md);
+      border-color: rgba(45,90,39,.2);
+    }
+    .step-num {
+      position: absolute;
+      top: -16px; left: 50%;
+      transform: translateX(-50%);
+      width: 32px; height: 32px;
+      border-radius: 50%;
+      background: var(--gold);
+      color: var(--hero-bg);
+      font-size: 13px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 12px rgba(200,168,75,.4);
+    }
+    .step-icon {
+      width: 68px; height: 68px;
+      border-radius: 50%;
+      background: rgba(45,90,39,.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 18px;
+      transition: background .25s;
+    }
+    .how-step:hover .step-icon { background: rgba(45,90,39,.14); }
+    .step-icon svg { width: 30px; height: 30px; color: var(--primary); }
+    .how-step h3 {
+      font-family: var(--font-serif);
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--fg);
+      margin-bottom: 10px;
+    }
+    .how-step p { font-size: 14px; color: var(--muted); line-height: 1.65; }
+    .how-banner {
+      background: var(--primary);
+      border-radius: var(--radius-xl);
+      padding: 36px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .how-banner-text strong {
+      display: block;
+      font-family: var(--font-serif);
+      font-size: 22px;
+      color: var(--white);
+      margin-bottom: 4px;
+    }
+    .how-banner-text span { font-size: 14px; color: rgba(255,255,255,.65); }
+
+    /* ═══════════════════════════════════════════════════════
+       PLANTAS ESPECIALES
+    ═══════════════════════════════════════════════════════ */
+    #plantas-especiales { background: var(--section-dark); overflow: hidden; position: relative; }
+    #plantas-especiales::before {
+      content: '';
+      position: absolute;
+      top: -80px; right: -80px;
+      width: 400px; height: 400px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(200,168,75,.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .special-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+    .special-left { position: relative; z-index: 1; }
+    .special-left .label { color: var(--gold); }
+    .special-left h2 { color: var(--white); margin-bottom: 16px; }
+    .special-tagline {
+      font-family: var(--font-serif);
+      font-size: clamp(22px, 3vw, 34px);
+      font-style: italic;
+      color: var(--gold);
+      margin-bottom: 20px;
+      line-height: 1.3;
+    }
+    .special-left p { color: rgba(255,255,255,.65); font-size: 16px; line-height: 1.75; margin-bottom: 28px; }
+    .special-steps { display: flex; flex-direction: column; gap: 14px; margin-bottom: 32px; }
+    .special-step-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+    .special-step-num {
+      width: 28px; height: 28px;
+      border-radius: 50%;
+      background: rgba(200,168,75,.15);
+      border: 1px solid rgba(200,168,75,.35);
+      color: var(--gold);
+      font-size: 11px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .special-step-item strong { display: block; font-size: 14px; color: var(--white); margin-bottom: 3px; }
+    .special-step-item span { font-size: 13px; color: rgba(255,255,255,.5); }
+    .special-right { position: relative; z-index: 1; }
+    .special-card-main {
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: var(--radius-xl);
+      padding: 32px;
+      margin-bottom: 16px;
+      backdrop-filter: blur(6px);
+    }
+    .special-card-main h3 {
+      font-family: var(--font-serif);
+      font-size: 18px;
+      color: var(--white);
+      margin-bottom: 20px;
+    }
+    .plant-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .plant-tag {
+      background: rgba(45,90,39,.4);
+      border: 1px solid rgba(74,140,64,.35);
+      color: rgba(255,255,255,.8);
+      font-size: 13px;
+      font-weight: 500;
+      padding: 6px 14px;
+      border-radius: 50px;
+      transition: all .2s;
+    }
+    .plant-tag:hover {
+      background: rgba(45,90,39,.7);
+      border-color: var(--accent);
+      color: var(--white);
+    }
+    .special-promise {
+      background: linear-gradient(135deg, rgba(200,168,75,.15), rgba(200,168,75,.06));
+      border: 1px solid rgba(200,168,75,.3);
+      border-radius: var(--radius);
+      padding: 22px 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .promise-icon {
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      background: rgba(200,168,75,.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .promise-icon svg { width: 22px; height: 22px; color: var(--gold); }
+    .special-promise strong { display: block; font-size: 14px; color: var(--gold); margin-bottom: 3px; }
+    .special-promise span { font-size: 13px; color: rgba(255,255,255,.5); }
+
+    /* ═══════════════════════════════════════════════════════
+       GALERÍA
+    ═══════════════════════════════════════════════════════ */
+    #galeria { background: var(--bg); }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto;
+      gap: 14px;
+    }
+    .gallery-item {
+      border-radius: var(--radius);
+      overflow: hidden;
+      cursor: pointer;
+      position: relative;
+      aspect-ratio: 1;
+    }
+    .gallery-item:nth-child(1) { grid-column: span 2; grid-row: span 2; aspect-ratio: auto; }
+    .gallery-item img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      transition: transform .45s;
+    }
+    .gallery-item:hover img { transform: scale(1.07); }
+    .gallery-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(22,33,18,.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity .3s;
+    }
+    .gallery-item:hover .gallery-overlay { opacity: 1; }
+    .gallery-overlay svg { width: 32px; height: 32px; color: var(--white); }
+
+    /* Lightbox */
+    .lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 2000;
+      background: rgba(10,15,10,.95);
+      backdrop-filter: blur(8px);
+      align-items: center;
+      justify-content: center;
+    }
+    .lightbox.open { display: flex; }
+    .lightbox-img {
+      max-width: 90vw;
+      max-height: 85vh;
+      border-radius: var(--radius);
+      object-fit: contain;
+      box-shadow: 0 32px 80px rgba(0,0,0,.6);
+    }
+    .lightbox-close {
+      position: absolute;
+      top: 24px; right: 24px;
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      background: rgba(255,255,255,.1);
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      transition: background .2s;
+      border: 1px solid rgba(255,255,255,.15);
+    }
+    .lightbox-close:hover { background: rgba(255,255,255,.2); }
+    .lightbox-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 48px; height: 48px;
+      border-radius: 50%;
+      background: rgba(255,255,255,.1);
+      border: 1px solid rgba(255,255,255,.15);
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      transition: all .2s;
+    }
+    .lightbox-nav:hover { background: rgba(255,255,255,.22); }
+    .lightbox-prev { left: 24px; }
+    .lightbox-next { right: 24px; }
+
+    /* ═══════════════════════════════════════════════════════
+       RESEÑAS
+    ═══════════════════════════════════════════════════════ */
+    #resenas { background: var(--section-dark); }
+    .rating-header {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 48px;
+      flex-wrap: wrap;
+    }
+    .rating-big {
+      font-family: var(--font-serif);
+      font-size: 72px;
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1;
+    }
+    .rating-info { flex: 1; }
+    .stars { display: flex; gap: 4px; margin-bottom: 6px; }
+    .star { color: var(--gold); font-size: 20px; }
+    .rating-count { font-size: 14px; color: rgba(255,255,255,.5); }
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .review-card {
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: var(--radius-xl);
+      padding: 28px;
+      transition: all .28s;
+    }
+    .review-card:hover {
+      background: rgba(255,255,255,.07);
+      border-color: rgba(200,168,75,.25);
+      transform: translateY(-4px);
+    }
+    .review-stars { display: flex; gap: 3px; margin-bottom: 14px; }
+    .review-stars .star { font-size: 14px; }
+    .review-text {
+      font-size: 14px;
+      color: rgba(255,255,255,.7);
+      line-height: 1.7;
+      margin-bottom: 18px;
+      font-style: italic;
+    }
+    .review-author { display: flex; align-items: center; gap: 12px; }
+    .review-avatar {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: var(--white);
+      font-size: 15px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .review-name { font-size: 14px; font-weight: 700; color: var(--white); }
+    .review-date { font-size: 12px; color: rgba(255,255,255,.35); }
+    .google-badge {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 36px;
+      justify-content: center;
+    }
+    .google-badge span { font-size: 13px; color: rgba(255,255,255,.4); }
+
+    /* ═══════════════════════════════════════════════════════
+       CONTACTO
+    ═══════════════════════════════════════════════════════ */
+    #contacto { background: var(--cream); }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 48px;
+      align-items: start;
+    }
+    .contact-info h2 { margin-bottom: 24px; }
+    .contact-items { display: flex; flex-direction: column; gap: 16px; margin-bottom: 32px; }
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      transition: all .25s;
+    }
+    .contact-item:hover {
+      border-color: var(--primary);
+      box-shadow: var(--shadow-sm);
+    }
+    .contact-item-icon {
+      width: 42px; height: 42px;
+      border-radius: 10px;
+      background: rgba(45,90,39,.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .contact-item-icon svg { width: 20px; height: 20px; color: var(--primary); }
+    .contact-item-label { font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: 3px; }
+    .contact-item-value { font-size: 15px; font-weight: 600; color: var(--fg); }
+    .contact-item-value a { color: var(--primary); transition: color .2s; }
+    .contact-item-value a:hover { color: var(--primary-lt); }
+
+    /* Horarios */
+    .schedule-title {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+    .schedule-list { display: flex; flex-direction: column; gap: 8px; }
+    .schedule-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 14px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      font-size: 14px;
+    }
+    .schedule-row .days { color: var(--fg); font-weight: 500; }
+    .schedule-row .hours { color: var(--primary); font-weight: 700; }
+
+    /* Mapa */
+    .map-wrap {
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      border: 3px solid var(--card);
+    }
+    .map-wrap iframe { display: block; width: 100%; height: 400px; border: none; }
+
+    /* ═══════════════════════════════════════════════════════
+       CTA FINAL
+    ═══════════════════════════════════════════════════════ */
+    #cta-final {
+      background: var(--primary);
+      position: relative;
+      overflow: hidden;
+    }
+    #cta-final::before {
+      content: '';
+      position: absolute;
+      top: -100px; right: -100px;
+      width: 500px; height: 500px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,255,255,.05) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    #cta-final::after {
+      content: '';
+      position: absolute;
+      bottom: -80px; left: -80px;
+      width: 360px; height: 360px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(200,168,75,.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .cta-inner {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+    }
+    .cta-inner .label { color: rgba(255,255,255,.5); }
+    .cta-inner .label::before, .cta-inner .label::after { opacity: .5; }
+    .cta-inner h2 {
+      color: var(--white);
+      font-size: clamp(30px, 5vw, 52px);
+      margin-bottom: 16px;
+    }
+    .cta-inner h2 em { color: var(--gold); font-style: italic; }
+    .cta-inner p { color: rgba(255,255,255,.7); font-size: 18px; max-width: 540px; margin: 0 auto 36px; }
+    .cta-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .cta-phone-note {
+      margin-top: 20px;
+      font-size: 14px;
+      color: rgba(255,255,255,.4);
+    }
+    .cta-phone-note a { color: rgba(255,255,255,.7); font-weight: 600; }
+    .cta-phone-note a:hover { color: var(--white); }
+
+    /* ═══════════════════════════════════════════════════════
+       FOOTER
+    ═══════════════════════════════════════════════════════ */
+    footer {
+      background: var(--hero-bg);
+      padding: 60px 0 28px;
+    }
+    .footer-top {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 48px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(255,255,255,.07);
+      margin-bottom: 28px;
+    }
+    .footer-brand p { font-size: 14px; color: rgba(255,255,255,.45); line-height: 1.7; margin-top: 14px; max-width: 280px; }
+    .footer-col h4 {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+    .footer-col ul { display: flex; flex-direction: column; gap: 8px; }
+    .footer-col ul li a {
+      font-size: 14px;
+      color: rgba(255,255,255,.5);
+      transition: color .2s;
+    }
+    .footer-col ul li a:hover { color: var(--white); }
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 12px;
+      color: rgba(255,255,255,.25);
+    }
+
+    /* Footer logo */
+    .footer-logo { display: flex; align-items: center; gap: 12px; margin-bottom: 4px; }
+
+    /* ═══════════════════════════════════════════════════════
+       BOTÓN FLOTANTE WHATSAPP
+    ═══════════════════════════════════════════════════════ */
+    .wa-float {
+      position: fixed;
+      bottom: 32px; right: 32px;
+      z-index: 1500;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .wa-btn {
+      width: 60px; height: 60px;
+      border-radius: 50%;
+      background: #25d366;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 24px rgba(37,211,102,.5);
+      transition: transform .28s, box-shadow .28s;
+      animation: wa-pulse 2.4s ease-in-out infinite;
+    }
+    @keyframes wa-pulse {
+      0%,100%{ box-shadow: 0 0 0 0 rgba(37,211,102,.5), 0 6px 24px rgba(37,211,102,.4); }
+      50%    { box-shadow: 0 0 0 14px rgba(37,211,102,0), 0 6px 24px rgba(37,211,102,.4); }
+    }
+    .wa-btn:hover { transform: scale(1.1); }
+    .wa-btn svg { width: 30px; height: 30px; fill: var(--white); }
+    .wa-tooltip {
+      background: var(--hero-bg);
+      color: var(--white);
+      font-size: 13px;
+      font-weight: 600;
+      padding: 8px 14px;
+      border-radius: 50px;
+      border: 1px solid rgba(255,255,255,.1);
+      white-space: nowrap;
+      opacity: 0;
+      transform: translateX(8px);
+      transition: all .25s;
+      pointer-events: none;
+    }
+    .wa-float:hover .wa-tooltip {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    /* ═══════════════════════════════════════════════════════
+       RESPONSIVE — Mobile First
+    ═══════════════════════════════════════════════════════ */
+    @media (max-width: 1024px) {
+      .products-grid { grid-template-columns: repeat(2, 1fr); }
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+      .gallery-item:nth-child(1) { grid-column: span 2; grid-row: span 1; }
+      .reviews-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-top { grid-template-columns: 1fr 1fr; }
+      .footer-brand { grid-column: span 2; }
+    }
+
+    @media (max-width: 768px) {
+      .section-pad { padding: 64px 0; }
+      .nav-links, .nav-cta { display: none; }
+      .hamburger { display: flex; }
+      .about-grid { grid-template-columns: 1fr; gap: 40px; }
+      .about-badge-float { right: 12px; bottom: 12px; }
+      .how-grid { grid-template-columns: 1fr; }
+      .how-connector { display: none; }
+      .special-grid { grid-template-columns: 1fr; gap: 40px; }
+      .products-grid { grid-template-columns: 1fr; }
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+      .gallery-item:nth-child(1) { grid-column: span 2; }
+      .reviews-grid { grid-template-columns: 1fr; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .footer-top { grid-template-columns: 1fr; gap: 28px; }
+      .footer-brand { grid-column: auto; }
+      .hero-stats { gap: 20px; }
+      .hero-btns { flex-direction: column; }
+      .hero-btns .btn { justify-content: center; }
+      .cta-btns { flex-direction: column; align-items: center; }
+      .how-banner { flex-direction: column; text-align: center; }
+      .rating-header { flex-direction: column; align-items: flex-start; }
+      .wa-float { bottom: 20px; right: 20px; }
+    }
+
+    @media (max-width: 480px) {
+      .container { padding: 0 16px; }
+      .gallery-grid { grid-template-columns: 1fr; }
+      .gallery-item:nth-child(1) { grid-column: auto; }
+      .trust-grid { grid-template-columns: 1fr; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ═══════════════════════════════════════════════════════
+     NAVBAR
+     Para cambiar links: edita los <a href="#seccion">
+═══════════════════════════════════════════════════════ -->
+<nav id="navbar" role="navigation" aria-label="Navegación principal">
+  <div class="container">
+    <div class="nav-inner">
+
+      <!-- Logo -->
+      <a href="#inicio" class="logo" aria-label="Garden Center Marysia - Inicio">
+        <svg class="logo-icon" viewBox="0 0 42 42" fill="none" aria-hidden="true">
+          <path d="M21 4C21 4 35 9 35 21C35 31 28 38 21 38C14 38 7 31 7 21C7 9 21 4 21 4Z"
+                fill="rgba(200,168,75,0.14)" stroke="rgba(200,168,75,0.7)" stroke-width="1.2"/>
+          <line x1="21" y1="9"  x2="21" y2="35" stroke="rgba(200,168,75,0.55)" stroke-width="0.9" stroke-dasharray="2 2.5"/>
+          <line x1="21" y1="16" x2="13.5" y2="23" stroke="rgba(200,168,75,0.45)" stroke-width="0.8"/>
+          <line x1="21" y1="16" x2="28.5" y2="23" stroke="rgba(200,168,75,0.45)" stroke-width="0.8"/>
+          <line x1="21" y1="23" x2="14"   y2="29" stroke="rgba(200,168,75,0.35)" stroke-width="0.7"/>
+          <line x1="21" y1="23" x2="28"   y2="29" stroke="rgba(200,168,75,0.35)" stroke-width="0.7"/>
+        </svg>
+        <div class="logo-text-wrap">
+          <span class="logo-main">Garden Center</span>
+          <div class="logo-sub">
+            <span class="logo-sub-name">Marysia</span>
+            <span class="logo-dot"></span>
+            <span class="logo-sub-tag">Vivero</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Links desktop -->
+      <ul class="nav-links" role="list">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#como-trabajamos">C&oacute;mo trabajamos</a></li>
+        <li><a href="#plantas-especiales">Plantas especiales</a></li>
+        <li><a href="#galeria">Galer&iacute;a</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+
+      <!-- CTA desktop -->
+      <!-- EDITA: cambia el número de WhatsApp (52595954223) -->
+      <div class="nav-cta">
+        <a href="https://wa.me/52595954223?text=Hola!%20Vi%20su%20p%C3%A1gina%20y%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20sus%20plantas."
+           class="btn btn-wa"
+           target="_blank" rel="noopener noreferrer"
+           aria-label="Contactar por WhatsApp">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+          </svg>
+          WhatsApp
+        </a>
+      </div>
+
+      <!-- Hamburger mobile -->
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<nav class="mobile-menu" id="mobileMenu" aria-label="Menú móvil">
+  <a href="#inicio"            onclick="closeMobileMenu()">Inicio</a>
+  <a href="#nosotros"          onclick="closeMobileMenu()">Nosotros</a>
+  <a href="#productos"         onclick="closeMobileMenu()">Productos</a>
+  <a href="#como-trabajamos"   onclick="closeMobileMenu()">C&oacute;mo trabajamos</a>
+  <a href="#plantas-especiales" onclick="closeMobileMenu()">Plantas especiales</a>
+  <a href="#galeria"           onclick="closeMobileMenu()">Galer&iacute;a</a>
+  <a href="#contacto"          onclick="closeMobileMenu()">Contacto</a>
+  <a href="https://wa.me/52595954223?text=Hola!%20Vi%20su%20p%C3%A1gina%20y%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n."
+     class="btn btn-wa" target="_blank" rel="noopener noreferrer" style="margin-top:20px;justify-content:center;" onclick="closeMobileMenu()">
+    Contactar por WhatsApp
+  </a>
+</nav>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     HERO
+     Reemplaza el src de la imagen con tu foto real
+═══════════════════════════════════════════════════════ -->
+<section id="inicio" aria-label="Sección principal">
+  <div class="hero-bg">
+    <!-- EDITA: reemplaza esta URL con una foto real del vivero -->
+    <img src="https://placehold.co/1920x1080?text=Vivero+Garden+Center+Marysia+hermoso+jardín+lleno+de+plantas+verdes+y+flores+coloridas"
+         alt="Vivero Garden Center Marysia — jardín lleno de plantas y flores"
+         loading="eager" />
+  </div>
+  <div class="hero-overlay" aria-hidden="true"></div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="hero-badge-dot" aria-hidden="true"></span>
+        Vivero en Texcoco, Estado de M&eacute;xico
+      </div>
+      <h1 class="hero-title">
+        Tu jard&iacute;n perfecto<br>
+        <span class="highlight">empieza aqu&iacute;</span><br>
+        <span class="line2">Plantas, &aacute;rboles y mucho m&aacute;s</span>
+      </h1>
+      <p class="hero-desc">
+        M&aacute;s de 15 a&ntilde;os llevando naturaleza y vida a los hogares y jardines del Valle de Texcoco.
+        Variedad, calidad y asesor&iacute;a personalizada en un solo lugar.
+      </p>
+
+      <!-- EDITA: cambia el número de teléfono -->
+      <div class="hero-btns">
+        <a href="tel:5959544223" class="btn btn-primary" aria-label="Llamar al vivero">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+          </svg>
+          Llamar ahora
+        </a>
+        <a href="https://wa.me/52595954223?text=Hola!%20Vi%20su%20p%C3%A1gina%20y%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20sus%20plantas."
+           class="btn btn-outline"
+           target="_blank" rel="noopener noreferrer"
+           aria-label="Enviar mensaje por WhatsApp">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+          </svg>
+          Enviar WhatsApp
+        </a>
+      </div>
+
+      <!-- EDITA: actualiza estas cifras reales -->
+      <div class="hero-stats" role="list" aria-label="Estadísticas del vivero">
+        <div class="stat-item" role="listitem">
+          <div class="stat-num">15<span>+</span></div>
+          <div class="stat-label">A&ntilde;os de experiencia</div>
+        </div>
+        <div class="stat-item" role="listitem">
+          <div class="stat-num">500<span>+</span></div>
+          <div class="stat-label">Variedades disponibles</div>
+        </div>
+        <div class="stat-item" role="listitem">
+          <div class="stat-num">4.5<span>★</span></div>
+          <div class="stat-label">Calificaci&oacute;n Google</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll" aria-hidden="true">
+    <div class="scroll-line"></div>
+    <span>Descubrir</span>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     SOBRE NOSOTROS
+     Edita el texto descriptivo y los trust-items
+═══════════════════════════════════════════════════════ -->
+<section id="nosotros" class="section-pad" aria-labelledby="about-title">
+  <div class="container">
+    <div class="about-grid">
+
+      <div class="about-img-wrap">
+        <div class="about-img-main">
+          <!-- EDITA: reemplaza con foto real del vivero o equipo -->
+          <img src="https://placehold.co/680x420?text=Interior+del+vivero+Garden+Center+Marysia+con+pasillos+llenos+de+plantas+verdes+y+flores+coloridas"
+               alt="Interior del vivero Garden Center Marysia con plantas y flores"
+               loading="lazy" />
+        </div>
+        <div class="about-badge-float" aria-hidden="true">
+          <div class="num">15+</div>
+          <div class="txt">A&ntilde;os<br>en Texcoco</div>
+        </div>
+      </div>
+
+      <div class="about-text">
+        <span class="label">Nuestra historia</span>
+        <h2 class="section-title" id="about-title">Un vivero con ra&iacute;ces profundas en Texcoco</h2>
+        <!-- EDITA: personaliza este texto con la historia real del negocio -->
+        <p>Garden Center Marysia naci&oacute; con una pasi&oacute;n simple pero poderosa: acercar la naturaleza a cada hogar y jard&iacute;n del Valle de Texcoco. Desde nuestras instalaciones en Xocotlan, hemos cultivado no solo plantas, sino relaciones de confianza con nuestros clientes.</p>
+        <p>Contamos con una amplia variedad de especies seleccionadas con cuidado, precios accesibles y la asesor&iacute;a personalizada que necesitas para que tu proyecto verde sea un &eacute;xito.</p>
+
+        <div class="trust-grid" role="list" aria-label="Razones para elegirnos">
+          <div class="trust-item" role="listitem">
+            <div class="trust-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <div class="trust-info">
+              <strong>Calidad garantizada</strong>
+              <span>Plantas sanas y vigorosas</span>
+            </div>
+          </div>
+          <div class="trust-item" role="listitem">
+            <div class="trust-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/>
+              </svg>
+            </div>
+            <div class="trust-info">
+              <strong>Atenci&oacute;n r&aacute;pida</strong>
+              <span>Respondemos en minutos</span>
+            </div>
+          </div>
+          <div class="trust-item" role="listitem">
+            <div class="trust-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+              </svg>
+            </div>
+            <div class="trust-info">
+              <strong>Asesor&iacute;a gratuita</strong>
+              <span>Te orientamos sin compromiso</span>
+            </div>
+          </div>
+          <div class="trust-item" role="listitem">
+            <div class="trust-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+              </svg>
+            </div>
+            <div class="trust-info">
+              <strong>Gran variedad</strong>
+              <span>M&aacute;s de 500 especies</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     PRODUCTOS / SERVICIOS
+     Para editar: modifica cada tarjeta de producto
+═══════════════════════════════════════════════════════ -->
+<section id="productos" class="section-pad" aria-labelledby="products-title">
+  <div class="container">
+    <div class="section-header text-center">
+      <span class="label">Lo que ofrecemos</span>
+      <h2 class="section-title" id="products-title">Nuestros productos y servicios</h2>
+      <p class="section-desc" style="margin:0 auto;">Todo lo que necesitas para crear y mantener espacios verdes hermosos, en un solo lugar y a precios accesibles.</p>
+    </div>
+
+    <div class="products-grid">
+
+      <!-- Tarjeta 1 — EDITA título, descripción e imagen -->
+      <article class="product-card">
+        <div class="product-img">
+          <img src="https://placehold.co/600x400?text=Plantas+ornamentales+coloridas+en+macetas+de+barro+con+flores+vibrantes"
+               alt="Plantas ornamentales con flores vibrantes en macetas" loading="lazy"/>
+          <span class="product-cat">M&aacute;s popular</span>
+        </div>
+        <div class="product-body">
+          <h3>Plantas Ornamentales</h3>
+          <p>Helechos, suculentas, cactus, begonias, lavanda y decenas de variedades m&aacute;s para interiores y exteriores.</p>
+          <a href="https://wa.me/52595954223?text=Hola!%20Me%20interesan%20las%20plantas%20ornamentales%2C%20%C2%BFqu%C3%A9%20variedades%20tienen%20disponibles?" target="_blank" rel="noopener noreferrer" class="product-link" aria-label="Preguntar por plantas ornamentales">
+            Cotizar por WhatsApp
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Tarjeta 2 -->
+      <article class="product-card">
+        <div class="product-img">
+          <img src="https://placehold.co/600x400?text=Árboles+frutales+jóvenes+con+frutos+naranjas+y+limones+en+vivero"
+               alt="Árboles frutales jóvenes de naranja y limón en vivero" loading="lazy"/>
+        </div>
+        <div class="product-body">
+          <h3>&Aacute;rboles Frutales</h3>
+          <p>Naranjos, limoneros, guayabos, higueras, aguacates y m&aacute;s. Perfectos para jardines y huertas familiares.</p>
+          <a href="https://wa.me/52595954223?text=Hola!%20Me%20interesan%20los%20%C3%A1rboles%20frutales%2C%20%C2%BFqu%C3%A9%20tienen%20disponibles?" target="_blank" rel="noopener noreferrer" class="product-link" aria-label="Preguntar por árboles frutales">
+            Cotizar por WhatsApp
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Tarjeta 3 -->
+      <article class="product-card">
+        <div class="product-img">
+          <img src="https://placehold.co/600x400?text=Macetas+de+barro+terracota+y+cerámica+decorativas+de+distintos+tamaños"
+               alt="Macetas decorativas de barro y cerámica de distintos tamaños" loading="lazy"/>
+        </div>
+        <div class="product-body">
+          <h3>Macetas y Contenedores</h3>
+          <p>Barro, terracota, cer&aacute;mica, pl&aacute;stico y macetas colgantes. Tama&ntilde;os para cada planta y cada espacio.</p>
+          <a href="https://wa.me/52595954223?text=Hola!%20Me%20interesan%20las%20macetas%2C%20%C2%BFqu%C3%A9%20tienen%20disponibles?" target="_blank" rel="noopener noreferrer" class="product-link" aria-label="Preguntar por macetas">
+            Cotizar por WhatsApp
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Tarjeta 4 -->
+      <article class="product-card">
+        <div class="product-img">
+          <img src="https://placehold.co/600x400?text=Sacos+de+tierra+negra+composta+y+sustrato+premium+para+plantas"
+               alt="Sacos de tierra negra, composta y sustrato premium para plantas" loading="lazy"/>
+        </div>
+        <div class="product-body">
+          <h3>Tierra y Sustratos</h3>
+          <p>Tierra negra, composta, sustrato para cactus, perlita y mezclados especializados seg&uacute;n el tipo de planta.</p>
+          <a href="https://wa.me/52595954223?text=Hola!%20Necesito%20tierra%20y%20sustratos%2C%20%C2%BFqu%C3%A9%20tienen%20disponibles?" target="_blank" rel="noopener noreferrer" class="product-link" aria-label="Preguntar por tierra y sustratos">
+            Cotizar por WhatsApp
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Tarjeta 5 -->
+      <article class="product-card">
+        <div class="product-img">
+          <img src="https://placehold.co/600x400?text=Plantas+de+sombra+y+follaje+helechos+tropicales+en+ambiente+verde+fresco"
+               alt="Plantas de sombra y helechos tropicales con follaje exuberante" loading="lazy"/>
+        </div>
+        <div class="product-body">
+          <h3>Plantas de Sombra</h3>
+          <p>Helechos, diefenbaquias, pothos, paz y otras plantas ideales para interiores o &aacute;reas con poca luz solar.</p>
+          <a href="https://wa.me/52595954223?text=Hola!%20Me%20interesan%20las%20plantas%20de%20sombra%2C%20%C2%BFqu%C3%A9%20tienen%20disponibles?" target="_blank" rel="noopener noreferrer" class="product-link" aria-label="Preguntar por plantas de sombra">
+            Cotizar por WhatsApp
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Tarjeta 6 -->
+      <article class="product-card">
+        <div class="product-img">
+          <img src="https://placehold.co/600x400?text=Asesoría+de+jardinería+experto+mostrando+plantas+en+vivero+natural"
+               alt="Asesoría de jardinería personalizada en el vivero" loading="lazy"/>
+          <span class="product-cat">Incluido</span>
+        </div>
+        <div class="product-body">
+          <h3>Asesor&iacute;a Personalizada</h3>
+          <p>¿No sabes cu&aacute;l planta elegir? Te orientamos seg&uacute;n tu espacio, clima y nivel de experiencia. Sin costo adicional.</p>
+          <a href="https://wa.me/52595954223?text=Hola!%20Necesito%20asesor%C3%ADa%20para%20elegir%20las%20plantas%20correctas%20para%20mi%20espacio." target="_blank" rel="noopener noreferrer" class="product-link" aria-label="Solicitar asesoría por WhatsApp">
+            Pedir asesor&iacute;a
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     CÓMO TRABAJAMOS
+     Para editar: modifica los textos de cada paso
+═══════════════════════════════════════════════════════ -->
+<section id="como-trabajamos" class="section-pad" aria-labelledby="how-title">
+  <div class="container">
+    <div class="section-header text-center">
+      <span class="label">Proceso simple</span>
+      <h2 class="section-title" id="how-title">As&iacute; de f&aacute;cil es comprar con nosotros</h2>
+      <p class="section-desc" style="margin:0 auto;">Sin complicaciones. Te acompa&ntilde;amos desde que nos contactas hasta que tu planta est&aacute; en casa.</p>
+    </div>
+
+    <div class="how-grid">
+      <div class="how-connector" aria-hidden="true"></div>
+
+      <!-- Paso 1 -->
+      <div class="how-step">
+        <span class="step-num" aria-hidden="true">1</span>
+        <div class="step-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+          </svg>
+        </div>
+        <h3>Nos contactas</h3>
+        <p>Ll&aacute;manos o esc&iacute;benos por WhatsApp. Cu&eacute;ntanos qu&eacute; tipo de planta buscas, para qu&eacute; espacio es y tu presupuesto.</p>
+      </div>
+
+      <!-- Paso 2 -->
+      <div class="how-step">
+        <span class="step-num" aria-hidden="true">2</span>
+        <div class="step-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+            <circle cx="8.5" cy="8.5" r="1.5"/>
+            <polyline points="21 15 16 10 5 21"/>
+          </svg>
+        </div>
+        <h3>Te mandamos fotos</h3>
+        <p>Te enviamos fotograf&iacute;as reales de lo que tenemos disponible o de plantas similares a lo que buscas para que puedas decidir con confianza.</p>
+      </div>
+
+      <!-- Paso 3 -->
+      <div class="how-step">
+        <span class="step-num" aria-hidden="true">3</span>
+        <div class="step-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+        </div>
+        <h3>Apartas o nos visitas</h3>
+        <p>Si te convence, apartas tu planta con un mensaje o nos visitas directamente en el vivero. ¡Te esperamos con gusto!</p>
+      </div>
+    </div>
+
+    <!-- Banner CTA -->
+    <div class="how-banner">
+      <div class="how-banner-text">
+        <strong>&iquest;Listo para empezar?</strong>
+        <span>Esc&iacute;benos ahora y te respondemos en minutos</span>
+      </div>
+      <a href="https://wa.me/52595954223?text=Hola!%20Quiero%20saber%20qu%C3%A9%20plantas%20tienen%20disponibles%20hoy."
+         class="btn btn-gold"
+         target="_blank" rel="noopener noreferrer"
+         aria-label="Iniciar conversación por WhatsApp">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+        Escr&iacute;benos ahora
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     PLANTAS ESPECIALES
+     Edita los plant-tags con las plantas que manejas
+═══════════════════════════════════════════════════════ -->
+<section id="plantas-especiales" class="section-pad" aria-labelledby="special-title">
+  <div class="container">
+    <div class="special-grid">
+
+      <div class="special-left">
+        <span class="label">Servicio especial</span>
+        <h2 class="section-title light" id="special-title">Plantas especiales</h2>
+        <p class="special-tagline">"Si no la tenemos, la conseguimos."</p>
+        <p>¿Buscas una planta espec&iacute;fica que no encuentras en cualquier lugar? En Garden Center Marysia contamos con una red de proveedores que nos permite conseguir especies raras, ex&oacute;ticas o de temporada bajo pedido.</p>
+
+        <div class="special-steps" role="list">
+          <div class="special-step-item" role="listitem">
+            <div class="special-step-num" aria-hidden="true">1</div>
+            <div>
+              <strong>Nos describes la planta</strong>
+              <span>Por WhatsApp o llamada, cu&eacute;ntanos qu&eacute; buscas</span>
+            </div>
+          </div>
+          <div class="special-step-item" role="listitem">
+            <div class="special-step-num" aria-hidden="true">2</div>
+            <div>
+              <strong>Buscamos en nuestra red</strong>
+              <span>Consultamos con nuestros proveedores especializados</span>
+            </div>
+          </div>
+          <div class="special-step-item" role="listitem">
+            <div class="special-step-num" aria-hidden="true">3</div>
+            <div>
+              <strong>Te avisamos y aparta</strong>
+              <span>Te notificamos precio y disponibilidad, sin compromiso</span>
+            </div>
+          </div>
+        </div>
+
+        <a href="https://wa.me/52595954223?text=Hola!%20Busco%20una%20planta%20especial%20que%20no%20encuentro%2C%20%C2%BFme%20pueden%20ayudar%20a%20conseguirla?"
+           class="btn btn-gold"
+           target="_blank" rel="noopener noreferrer"
+           aria-label="Solicitar planta especial por WhatsApp">
+          Solicitar una planta especial
+        </a>
+      </div>
+
+      <div class="special-right">
+        <div class="special-card-main">
+          <h3>Plantas que podemos conseguir</h3>
+          <div class="plant-tags" role="list" aria-label="Ejemplos de plantas especiales">
+            <!-- EDITA: agrega o quita etiquetas según lo que manejes -->
+            <span class="plant-tag" role="listitem">Bonsai</span>
+            <span class="plant-tag" role="listitem">Monstera Deliciosa</span>
+            <span class="plant-tag" role="listitem">Orqu&iacute;deas ex&oacute;ticas</span>
+            <span class="plant-tag" role="listitem">Bamb&uacute; decorativo</span>
+            <span class="plant-tag" role="listitem">Palmeras tropicales</span>
+            <span class="plant-tag" role="listitem">Cactus gigante</span>
+            <span class="plant-tag" role="listitem">Ficus benjamin</span>
+            <span class="plant-tag" role="listitem">Plantas carnivoras</span>
+            <span class="plant-tag" role="listitem">Jard&iacute;n zen</span>
+            <span class="plant-tag" role="listitem">Plantas acu&aacute;ticas</span>
+            <span class="plant-tag" role="listitem">Hierbas aromaticas</span>
+            <span class="plant-tag" role="listitem">Arbustos para barda</span>
+            <span class="plant-tag" role="listitem">Rosas especiales</span>
+            <span class="plant-tag" role="listitem">Y mucho m&aacute;s...</span>
+          </div>
+        </div>
+
+        <div class="special-promise" role="complementary" aria-label="Nuestra promesa">
+          <div class="promise-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <polyline points="9 12 11 14 15 10"/>
+            </svg>
+          </div>
+          <div>
+            <strong>Nuestra promesa</strong>
+            <span>Si no la conseguimos, te decimos honestamente. Tu confianza vale m&aacute;s que una venta.</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     GALERÍA
+     Reemplaza los src de las imágenes con tus fotos reales
+═══════════════════════════════════════════════════════ -->
+<section id="galeria" class="section-pad" aria-labelledby="gallery-title">
+  <div class="container">
+    <div class="section-header text-center">
+      <span class="label">Nuestro vivero</span>
+      <h2 class="section-title" id="gallery-title">Un vistazo a nuestras plantas</h2>
+      <p class="section-desc" style="margin:0 auto;">Cada planta es cuidada con dedicaci&oacute;n. &iquest;Ves algo que te gusta? Esc&iacute;benos y te la apartamos.</p>
+    </div>
+
+    <div class="gallery-grid" role="list" aria-label="Galería de plantas del vivero">
+      <!-- EDITA: reemplaza cada src con tus fotos reales del vivero -->
+      <div class="gallery-item" role="listitem" onclick="openLightbox(0)" tabindex="0" aria-label="Ver imagen 1 en tamaño completo" onkeypress="if(event.key==='Enter')openLightbox(0)">
+        <img src="https://placehold.co/800x600?text=Vista+panorámica+del+vivero+con+pasillos+de+plantas+ornamentales+coloridas+y+árboles"
+             alt="Vista panorámica del vivero con pasillos llenos de plantas ornamentales" loading="lazy"/>
+        <div class="gallery-overlay" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+        </div>
+      </div>
+      <div class="gallery-item" role="listitem" onclick="openLightbox(1)" tabindex="0" aria-label="Ver imagen 2 en tamaño completo" onkeypress="if(event.key==='Enter')openLightbox(1)">
+        <img src="https://placehold.co/600x600?text=Suculentas+y+cactus+pequeños+en+macetas+de+terracota+arreglo+decorativo"
+             alt="Suculentas y cactus en macetas de terracota" loading="lazy"/>
+        <div class="gallery-overlay" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+        </div>
+      </div>
+      <div class="gallery-item" role="listitem" onclick="openLightbox(2)" tabindex="0" aria-label="Ver imagen 3 en tamaño completo" onkeypress="if(event.key==='Enter')openLightbox(2)">
+        <img src="https://placehold.co/600x600?text=Árbol+frutal+joven+naranjo+con+frutos+en+maceta+grande+de+vivero"
+             alt="Árbol frutal joven de naranjo con frutos en maceta" loading="lazy"/>
+        <div class="gallery-overlay" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+        </div>
+      </div>
+      <div class="gallery-item" role="listitem" onclick="openLightbox(3)" tabindex="0" aria-label="Ver imagen 4 en tamaño completo" onkeypress="if(event.key==='Enter')openLightbox(3)">
+        <img src="https://placehold.co/600x600?text=Flores+de+temporada+rosas+y+bugambilias+en+exhibicion+vivero+colorido"
+             alt="Flores de temporada rosas y bugambilias en exhibición" loading="lazy"/>
+        <div class="gallery-overlay" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+        </div>
+      </div>
+      <div class="gallery-item" role="listitem" onclick="openLightbox(4)" tabindex="0" aria-label="Ver imagen 5 en tamaño completo" onkeypress="if(event.key==='Enter')openLightbox(4)">
+        <img src="https://placehold.co/600x600?text=Helechos+y+plantas+tropicales+de+interior+iluminados+por+luz+natural+suave"
+             alt="Helechos y plantas tropicales iluminados por luz natural suave" loading="lazy"/>
+        <div class="gallery-overlay" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Vista de imagen ampliada">
+  <button class="lightbox-close" onclick="closeLightbox()" aria-label="Cerrar imagen">&times;</button>
+  <button class="lightbox-nav lightbox-prev" onclick="prevImage()" aria-label="Imagen anterior">&#8249;</button>
+  <img class="lightbox-img" id="lightboxImg" src="" alt="" />
+  <button class="lightbox-nav lightbox-next" onclick="nextImage()" aria-label="Imagen siguiente">&#8250;</button>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     RESEÑAS
+     Edita cada review-card con reseñas reales cuando las tengas
+═══════════════════════════════════════════════════════ -->
+<section id="resenas" class="section-pad" aria-labelledby="reviews-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="label" style="color:rgba(200,168,75,.7)">Lo que dicen nuestros clientes</span>
+      <h2 class="section-title light" id="reviews-title">Calificaci&oacute;n Google</h2>
+    </div>
+
+    <div class="rating-header" aria-label="Calificación general">
+      <div class="rating-big" aria-label="4.5 de 5 estrellas">4.5</div>
+      <div class="rating-info">
+        <div class="stars" aria-hidden="true">
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star" style="opacity:.5">&#9733;</span>
+        </div>
+        <div class="rating-count">Basado en rese&ntilde;as de Google Maps</div>
+      </div>
+    </div>
+
+    <div class="reviews-grid">
+
+      <!-- EDITA: reemplaza con reseñas reales cuando las tengas -->
+      <article class="review-card">
+        <div class="review-stars" aria-label="5 estrellas">
+          <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+        </div>
+        <p class="review-text">"Excelente atenci&oacute;n. Me ayudaron a elegir las plantas perfectas para mi jard&iacute;n y todas siguen muy sanas. Sin duda el mejor vivero de Texcoco."</p>
+        <div class="review-author">
+          <div class="review-avatar" aria-hidden="true">M</div>
+          <div>
+            <div class="review-name">Mar&iacute;a G.</div>
+            <div class="review-date">Hace 2 semanas</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="review-card">
+        <div class="review-stars" aria-label="5 estrellas">
+          <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+        </div>
+        <p class="review-text">"Compr&eacute; varios &aacute;rboles frutales y llegaron en perfecto estado. El precio muy accesible y la due&ntilde;a muy amable. Ya les comprar&eacute; m&aacute;s plantas."</p>
+        <div class="review-author">
+          <div class="review-avatar" aria-hidden="true">C</div>
+          <div>
+            <div class="review-name">Carlos R.</div>
+            <div class="review-date">Hace 1 mes</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="review-card">
+        <div class="review-stars" aria-label="4 estrellas">
+          <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star" style="opacity:.35">&#9733;</span>
+        </div>
+        <p class="review-text">"Muy buena variedad de plantas y sustratos. Me mandaron fotos por WhatsApp antes de ir y todo estaba como me lo mostraron. Recomendado."</p>
+        <div class="review-author">
+          <div class="review-avatar" aria-hidden="true">L</div>
+          <div>
+            <div class="review-name">Laura V.</div>
+            <div class="review-date">Hace 3 semanas</div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="google-badge" aria-label="Ver reseñas en Google">
+      <span>Ver todas las rese&ntilde;as en</span>
+      <a href="https://www.google.com.mx/maps/place/Vivero+Garden+Center+Marysia/"
+         target="_blank" rel="noopener noreferrer"
+         style="font-weight:700; color:var(--gold); font-size:14px;"
+         aria-label="Abrir reseñas en Google Maps">
+        Google Maps &#8599;
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     CONTACTO Y UBICACIÓN
+     EDITA: dirección, teléfono, horarios y el src del mapa
+═══════════════════════════════════════════════════════ -->
+<section id="contacto" class="section-pad" aria-labelledby="contact-title">
+  <div class="container">
+    <div class="section-header text-center">
+      <span class="label">D&oacute;nde estamos</span>
+      <h2 class="section-title" id="contact-title">Visítanos o contáctanos</h2>
+      <p class="section-desc" style="margin:0 auto;">Estamos en Texcoco, listos para atenderte de lunes a domingo. Tambi&eacute;n respondemos por WhatsApp.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+
+        <div class="contact-items">
+
+          <div class="contact-item">
+            <div class="contact-item-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-item-label">Direcci&oacute;n</div>
+              <!-- EDITA: dirección del negocio -->
+              <div class="contact-item-value">
+                Carr al Molino de Flores 8,<br>Xocotlan, Texcoco, Estado de M&eacute;xico
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-item-label">Tel&eacute;fono</div>
+              <!-- EDITA: número de teléfono -->
+              <div class="contact-item-value"><a href="tel:5959544223">595 954 4223</a></div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-item-label">WhatsApp</div>
+              <!-- EDITA: número de WhatsApp -->
+              <div class="contact-item-value">
+                <a href="https://wa.me/52595954223?text=Hola!%20Vi%20su%20p%C3%A1gina%20y%20quisiera%20m%C3%A1s%20informaci%C3%B3n."
+                   target="_blank" rel="noopener noreferrer">595 954 4223</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- HORARIOS — edita días y horas -->
+        <div>
+          <p class="schedule-title">Horario de atenci&oacute;n</p>
+          <ul class="schedule-list" aria-label="Horarios de atención">
+            <li class="schedule-row">
+              <span class="days">Lunes &ndash; Viernes</span>
+              <span class="hours">8:00 am &ndash; 6:00 pm</span>
+            </li>
+            <li class="schedule-row">
+              <span class="days">S&aacute;bado</span>
+              <span class="hours">8:00 am &ndash; 5:00 pm</span>
+            </li>
+            <li class="schedule-row">
+              <span class="days">Domingo</span>
+              <span class="hours">9:00 am &ndash; 3:00 pm</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- MAPA — reemplaza el src con el embed real de Google Maps -->
+      <!-- Para obtenerlo: Google Maps → busca el negocio → Compartir → Insertar mapa → copia el src del iframe -->
+      <div class="map-wrap" aria-label="Mapa de ubicación del vivero">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3760.0!2d-98.8!3d19.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sVivero+Garden+Center+Marysia!5e0!3m2!1ses!2smx!4v1"
+          title="Ubicación de Vivero Garden Center Marysia en Google Maps"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     CTA FINAL
+═══════════════════════════════════════════════════════ -->
+<section id="cta-final" class="section-pad" aria-labelledby="cta-title">
+  <div class="container">
+    <div class="cta-inner">
+      <span class="label">No esperes m&aacute;s</span>
+      <h2 id="cta-title">Dale vida a tu hogar<br>con <em>plantas de calidad</em></h2>
+      <p>Visítanos hoy o cotiza desde tu cel&oacute;fono. Estamos a unos minutos de Texcoco, listos para ayudarte a crear el jard&iacute;n de tus sue&ntilde;os.</p>
+      <div class="cta-btns">
+        <a href="https://wa.me/52595954223?text=Hola!%20Quiero%20cotizar%20plantas%20para%20mi%20hogar."
+           class="btn btn-gold"
+           target="_blank" rel="noopener noreferrer"
+           aria-label="Cotizar plantas por WhatsApp">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+          </svg>
+          Cotizar por WhatsApp
+        </a>
+        <a href="tel:5959544223" class="btn btn-outline" aria-label="Llamar al vivero">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+          </svg>
+          Llamar: 595 954 4223
+        </a>
+        <a href="#contacto" class="btn btn-outline">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+          </svg>
+          C&oacute;mo llegar
+        </a>
+      </div>
+      <p class="cta-phone-note">
+        O ll&aacute;manos directamente al <a href="tel:5959544223">595 954 4223</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════════════ -->
+<footer role="contentinfo">
+  <div class="container">
+    <div class="footer-top">
+
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <svg width="40" height="40" viewBox="0 0 42 42" fill="none" aria-hidden="true">
+            <path d="M21 4C21 4 35 9 35 21C35 31 28 38 21 38C14 38 7 31 7 21C7 9 21 4 21 4Z"
+                  fill="rgba(200,168,75,0.14)" stroke="rgba(200,168,75,0.7)" stroke-width="1.2"/>
+            <line x1="21" y1="9"  x2="21" y2="35" stroke="rgba(200,168,75,0.55)" stroke-width="0.9" stroke-dasharray="2 2.5"/>
+            <line x1="21" y1="16" x2="13.5" y2="23" stroke="rgba(200,168,75,0.45)" stroke-width="0.8"/>
+            <line x1="21" y1="16" x2="28.5" y2="23" stroke="rgba(200,168,75,0.45)" stroke-width="0.8"/>
+          </svg>
+          <div>
+            <span style="display:block;font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:#fff;letter-spacing:-.01em;">Garden Center</span>
+            <span style="display:block;font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-top:2px;">Marysia &middot; Vivero</span>
+          </div>
+        </div>
+        <p>Tu vivero de confianza en Texcoco. Plantas, &aacute;rboles, macetas y asesor&iacute;a personalizada desde hace m&aacute;s de 15 a&ntilde;os.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navegaci&oacute;n</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#como-trabajamos">C&oacute;mo trabajamos</a></li>
+          <li><a href="#plantas-especiales">Plantas especiales</a></li>
+          <li><a href="#galeria">Galer&iacute;a</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="tel:5959544223">595 954 4223</a></li>
+          <li>
+            <a href="https://wa.me/52595954223?text=Hola!" target="_blank" rel="noopener noreferrer">
+              WhatsApp
+            </a>
+          </li>
+          <li>
+            <a href="https://www.google.com.mx/maps/place/Vivero+Garden+Center+Marysia/" target="_blank" rel="noopener noreferrer">
+              Ver en Google Maps
+            </a>
+          </li>
+          <li>Carr al Molino de Flores 8,<br>Xocotlan, Texcoco</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; 2025 Garden Center Marysia. Todos los derechos reservados.</span>
+      <span>Texcoco, Estado de M&eacute;xico</span>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     BOTÓN FLOTANTE WHATSAPP
+     Siempre visible en toda la página
+═══════════════════════════════════════════════════════ -->
+<div class="wa-float" aria-label="Contactar por WhatsApp">
+  <span class="wa-tooltip" aria-hidden="true">¡Escr&iacute;benos!</span>
+  <a href="https://wa.me/52595954223?text=Hola!%20Vi%20su%20p%C3%A1gina%20y%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20sus%20plantas."
+     class="wa-btn"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Abrir WhatsApp para contactar al vivero">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+    </svg>
+  </a>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     JAVASCRIPT
+═══════════════════════════════════════════════════════ -->
+<script>
+  // ── Navbar: efecto glassmorphism al hacer scroll ──
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
+  }, { passive: true });
+
+  // ── Menú mobile ──
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  hamburger.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('open');
+    hamburger.classList.toggle('open', isOpen);
+    hamburger.setAttribute('aria-expanded', isOpen);
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  });
+
+  function closeMobileMenu() {
+    mobileMenu.classList.remove('open');
+    hamburger.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+
+  // Cerrar menú al presionar Escape
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeMobileMenu();
+      closeLightbox();
+    }
+  });
+
+  // ── Lightbox de galería ──
+  const galleryImages = [
+    {
+      src: 'https://placehold.co/1200x800?text=Vista+panorámica+del+vivero+Garden+Center+Marysia+con+plantas+y+árboles',
+      alt: 'Vista panorámica del vivero Garden Center Marysia'
+    },
+    {
+      src: 'https://placehold.co/800x800?text=Suculentas+y+cactus+en+macetas+de+terracota+arreglo+decorativo',
+      alt: 'Suculentas y cactus en macetas de terracota'
+    },
+    {
+      src: 'https://placehold.co/800x800?text=Árbol+frutal+naranjo+joven+con+frutos+en+maceta+de+vivero',
+      alt: 'Árbol frutal naranjo joven con frutos'
+    },
+    {
+      src: 'https://placehold.co/800x800?text=Flores+de+temporada+rosas+y+bugambilias+en+exhibición+colorida',
+      alt: 'Flores de temporada rosas y bugambilias'
+    },
+    {
+      src: 'https://placehold.co/800x800?text=Helechos+y+plantas+tropicales+con+luz+natural+suave',
+      alt: 'Helechos y plantas tropicales con luz natural'
+    }
+  ];
+
+  let currentImage = 0;
+  const lightbox    = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightboxImg');
+
+  function openLightbox(index) {
+    currentImage = index;
+    lightboxImg.src = galleryImages[index].src;
+    lightboxImg.alt = galleryImages[index].alt;
+    lightbox.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  function prevImage() {
+    currentImage = (currentImage - 1 + galleryImages.length) % galleryImages.length;
+    lightboxImg.src = galleryImages[currentImage].src;
+    lightboxImg.alt = galleryImages[currentImage].alt;
+  }
+
+  function nextImage() {
+    currentImage = (currentImage + 1) % galleryImages.length;
+    lightboxImg.src = galleryImages[currentImage].src;
+    lightboxImg.alt = galleryImages[currentImage].alt;
+  }
+
+  // Cerrar lightbox al hacer click fuera de la imagen
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) closeLightbox();
+  });
+
+  // Navegación con teclado en lightbox
+  document.addEventListener('keydown', (e) => {
+    if (!lightbox.classList.contains('open')) return;
+    if (e.key === 'ArrowLeft')  prevImage();
+    if (e.key === 'ArrowRight') nextImage();
+  });
+
+  // ── Animaciones de entrada al hacer scroll (Intersection Observer) ──
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity    = '1';
+        entry.target.style.transform  = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll(
+    '.product-card, .how-step, .trust-item, .review-card, .contact-item, .special-step-item'
+  ).forEach(el => {
+    el.style.opacity   = '0';
+    el.style.transform = 'translateY(28px)';
+    el.style.transition = 'opacity .5s ease, transform .5s ease';
+    observer.observe(el);
+  });
+</script>
+
+</body>
+</html>
