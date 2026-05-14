@@ -1316,7 +1316,7 @@
         <span class="line2">Plantas, &aacute;rboles y mucho m&aacute;s</span>
       </h1>
       <p class="hero-desc">
-        M&aacute;s de 15 a&ntilde;os llevando naturaleza y vida a los hogares y jardines del Valle de Texcoco.
+        M&aacute;s de 32 a&ntilde;os llevando naturaleza y vida a los hogares y jardines del Valle de Texcoco.
         Variedad, calidad y asesor&iacute;a personalizada en un solo lugar.
       </p>
 
@@ -1342,7 +1342,7 @@
       <!-- EDITA: actualiza estas cifras reales -->
       <div class="hero-stats" role="list" aria-label="Estadísticas del vivero">
         <div class="stat-item" role="listitem">
-          <div class="stat-num">15<span>+</span></div>
+          <div class="stat-num">32<span>+</span></div>
           <div class="stat-label">A&ntilde;os de experiencia</div>
         </div>
         <div class="stat-item" role="listitem">
@@ -1379,7 +1379,7 @@
                loading="lazy" />
         </div>
         <div class="about-badge-float" aria-hidden="true">
-          <div class="num">15+</div>
+          <div class="num">32+</div>
           <div class="txt">A&ntilde;os<br>en Texcoco</div>
         </div>
       </div>
@@ -2014,9 +2014,6 @@
           C&oacute;mo llegar
         </a>
       </div>
-      <p class="cta-phone-note">
-        O env&iacute;anos un mensaje al segundo n&uacute;mero: <a href="https://wa.me/525951151542?text=Hola!" target="_blank" rel="noopener noreferrer">595 115 1542</a>
-      </p>
     </div>
   </div>
 </section>
@@ -2043,7 +2040,7 @@
             <span style="display:block;font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-top:2px;">Marysia &middot; Vivero</span>
           </div>
         </div>
-        <p>Tu vivero de confianza en Texcoco. Plantas, &aacute;rboles, macetas y asesor&iacute;a personalizada desde hace m&aacute;s de 15 a&ntilde;os.</p>
+      <p>Tu vivero de confianza en Texcoco. Plantas, &aacute;rboles, macetas y asesor&iacute;a personalizada desde hace m&aacute;s de 32 a&ntilde;os.</p>
       </div>
 
       <div class="footer-col">
@@ -2226,6 +2223,16 @@
 
   document.querySelectorAll(
     '.product-card, .how-step, .trust-item, .review-card, .contact-item, .special-step-item'
+  ).forEach(el => {
+    el.style.opacity   = '0';
+    el.style.transform = 'translateY(28px)';
+    el.style.transition = 'opacity .5s ease, transform .5s ease';
+    observer.observe(el);
+  });
+</script>
+
+</body>
+</html>
   ).forEach(el => {
     el.style.opacity   = '0';
     el.style.transform = 'translateY(28px)';
